@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>NFT preview card component</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors:{
+            'very-dark-blue': 'hsl(217, 54%, 11%)',
+            'dark-blue-card-BG': 'hsl(216, 50%, 16%)',
+            'dark-blue-line': 'hsl(215, 32%, 27%)',
+            'soft-blue': 'hsl(215, 51%, 70%)',
+            'cyan': 'hsl(178, 100%, 50%)'
+            
+          },
+          fontFamily: {
+            poppins: ['Outfit', 'sans-serif'],
+          },
+        },
+      },
+    }
+    </script>
+  
+</head>
+<body class="bg-very-dark-blue font-Outfit">
+  <section class="flex flex-col items-start md:min-h-[70vh] md:mt-[4rem] md:ml-[35rem] bg-dark-blue-card-BG md:w-[20rem] p-[20px] rounded-lg md:gap-5 gap-7 m-[2rem] w-[29rem] min-h-[45rem]">
+    
+
+      <div class="relative md:w-[17rem] md:h-[16rem] rounded-md overflow-hidden cursor-pointer group w-[27rem] h-[22rem]">
+        
+        <img src="images/image-equilibrium.jpg" alt="equilibrium img" class="w-full h-full object-cover">
+        
+       
+        <div class="absolute inset-0 bg-cyan/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <img src="images/icon-view.svg" alt="view icon" class="w-10 h-10">
+        </div>
+      </div>
+    <h1 class="text-white md:text-xl text-4xl font-bold hover:text-cyan cursor-pointer">Equilibrium#3429</h1>
+    <p class="text-soft-blue font-normal md:text-base text-2xl">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="flex justify-center md:gap-[90px] gap-[150px]">
+      <span class="flex gap-2">
+        <img src="images\icon-ethereum.svg" alt="icon-ethereum">
+        <p class="text-cyan md:text-base text-2xl">0.041ETH</p>
+      </span>
+      <span class="flex gap-1">
+        <img src="images/icon-clock.svg" alt="icon-clock" class="w-[20px]">
+        <p class="text-soft-blue md:text-base text-2xl">3 daysleft</p>
+      </span>
+    </div>
+    <div class="border-b-2 border-gray-700 w-full h-[1px] mt-[0.7rem]"></div>
+    <div class="flex gap-4">
+    <img src="images/image-avatar.png" alt="image-avatar" class="md:w-[35px] md:h-[35px] w-[60px] h-[60px]border-2 border-white rounded-full">
+    <p class="text-soft-blue font-semibold p-[3px] md:text-base text-2xl">Creation of <span class="text-white hover:text-cyan cursor-pointer"> Jules Wyrvern</span></p>
+  </div>
+  </section>
+  <footer class="text-white md:ml-[32.5rem] ml-[5rem] mt-[2rem]">Challenge by <a class="text-cyan" href="https://www.frontendmentor.io/">frontendMentor</a> . Coded by <a class="text-cyan" href="https://www.frontendmentor.io/profile/zahraAbellu">ZahraAbellu</a>.</footer>
+</body>
+</html>
